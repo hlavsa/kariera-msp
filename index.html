@@ -9630,7 +9630,7 @@
           </div>
           <div>
             <img
-              class="mx-auto lg:max-w-xl h-64 rounded-3xl sm:h-96"
+              class="mx-auto lg:max-w-xl h-64 rounded-full sm:h-96"
               src="./hero.png"
             />
           </div>
@@ -9731,11 +9731,178 @@
             showContent(1);
           </script>
         </div>
+
         <div class="py-8 px-4 mx-auto max-w-6xl lg:py-16">
           <div
-            class="h-64 rounded-3xl sm:h-96 overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat"
+            class="h-64 rounded-full sm:h-96 overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat"
             style="background-image: url('./msp_cover.jpg')"
           ></div>
+        </div>
+
+        <div class="py-8 px-4 mx-auto max-w-6xl lg:py-16">
+          <h2
+            class="mb-4 text-2xl font-['Inknut_Antiqua'] leading-none text-[#15355E] md:text-3xl tracking-tight"
+          >
+            Benefity v Justici
+          </h2>
+          <div class="flex justify-center p-4">
+            <div class="w-full overflow-hidden">
+              <div class="flex gap-8">
+                <div class="w-1/4">
+                  <div
+                    class="bg-white rounded-2xl mb-4 p-4 cursor-pointer"
+                    onclick="showContent(1)"
+                  >
+                    <div class="flex justify-between items-center">
+                      <span class="font-bold">Lidské zdroje (HR)</span>
+                      <span id="icon-1" class="text-lg">-</span>
+                    </div>
+                  </div>
+                  <div class="p-4 cursor-pointer" onclick="showContent(2)">
+                    <div class="flex justify-between items-center">
+                      <span>IT</span>
+                      <span id="icon-2" class="text-lg">+</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-2/3 p-4 md:p-8 bg-white rounded-2xl">
+                  <div id="content-1" class="">
+                    <h2 class="text-xl tracking-tight font-bold mb-4">
+                      Ministerský rada pro XY
+                    </h2>
+                    <p class="text-lg font-normal text-gray-800 my-4">
+                      Popis pozice
+                    </p>
+                    <a
+                      href="#"
+                      class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-800 rounded-full bg-[#B5D9F3] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                    >
+                      Podat přihlášku
+                      <svg
+                        class="w-5 h-5 ms-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M15 15L17 15C17.961 15 18.3688 16.2234 17.6 16.8L12.6 20.55C12.2444 20.8167 11.7556 20.8167 11.4 20.55L6.4 16.8C5.63119 16.2234 6.03899 15 7 15L11 15C11.5523 15 12 14.5523 12 14L12 3"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                  <div id="content-2" class="hidden">
+                    <h2 class="text-xl tracking-tight font-bold mb-4">
+                      Ministerský rada pro XY
+                    </h2>
+                    <p class="text-lg font-normal text-gray-800 my-4">
+                      Content for the second item goes here...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function showContent(id) {
+              // Hide all contents
+              document.getElementById("content-1").classList.add("hidden");
+              document.getElementById("content-2").classList.add("hidden");
+
+              // Reset all icons
+              document.getElementById("icon-1").textContent = "+";
+              document.getElementById("icon-2").textContent = "+";
+
+              // Show the selected content
+              document
+                .getElementById("content-" + id)
+                .classList.remove("hidden");
+              document.getElementById("icon-" + id).textContent = "-";
+            }
+
+            // Initial state
+            showContent(1);
+          </script>
+        </div>
+
+        <div class="bg-[#B5D9F3] py-8 px-4 mx-auto max-w-6xl lg:py-16">
+          <div>
+            <h2
+              class="mb-4 text-2xl font-['Inknut_Antiqua'] leading-none text-[#15355E] md:text-3xl tracking-tight"
+            >
+              Studenti a absolventi
+            </h2>
+            <p class="my-8 text-lg font-normal text-gray-800 lg:text-xl">
+              Pokud studuješ, nebo jsi právě vyšel máme i pro tebe programy.
+            </p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0">
+              <a
+                href="#"
+                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-[#ECF7FF] rounded-full bg-[#15355E] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300"
+              >
+                Teď hledáme
+                <svg
+                  class="w-5 h-5 ms-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M15 15L17 15C17.961 15 18.3688 16.2234 17.6 16.8L12.6 20.55C12.2444 20.8167 11.7556 20.8167 11.4 20.55L6.4 16.8C5.63119 16.2234 6.03899 15 7 15L11 15C11.5523 15 12 14.5523 12 14L12 3"
+                      stroke="#ECF7FF"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="ml-4 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-800 rounded-full bg-[#B5D9F3] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100"
+              >
+                Proč k nám
+                <svg
+                  class="w-5 h-5 ms-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M15 15L17 15C17.961 15 18.3688 16.2234 17.6 16.8L12.6 20.55C12.2444 20.8167 11.7556 20.8167 11.4 20.55L6.4 16.8C5.63119 16.2234 6.03899 15 7 15L11 15C11.5523 15 12 14.5523 12 14L12 3"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </main>
