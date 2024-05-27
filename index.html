@@ -9630,7 +9630,7 @@
           </div>
           <div>
             <img
-              class="mx-auto lg:max-w-xl h-64 rounded-full sm:h-96"
+              class="mx-auto lg:max-w-xl h-64 rounded-2xl sm:h-96"
               src="./hero.png"
             />
           </div>
@@ -9641,100 +9641,99 @@
           >
             Jsem připraven změnit Justici
           </h2>
-          <!DOCTYPE html>
-          <html lang="en">
-            <head>
-              <meta charset="UTF-8" />
-              <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1.0"
-              />
-              <title>Accordion Example</title>
-              <link
-                href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-                rel="stylesheet"
-              />
-            </head>
-            <body class="bg-blue-50">
-              <div class="flex justify-center p-4">
-                <div
-                  class="w-full max-w-4xl bg-white rounded-lg shadow-md overflow-hidden"
-                >
-                  <div class="flex">
-                    <div class="w-1/3 border-r">
-                      <div class="p-4 cursor-pointer" onclick="showContent(1)">
-                        <div class="flex justify-between items-center">
-                          <span class="font-bold"
-                            >Sjekk om du har en aktiv BankID med passord</span
-                          >
-                          <span id="icon-1" class="text-lg">-</span>
-                        </div>
-                      </div>
-                      <div class="p-4 cursor-pointer" onclick="showContent(2)">
-                        <div class="flex justify-between items-center">
-                          <span>Husker du BankID-passordet ditt?</span>
-                          <span id="icon-2" class="text-lg">+</span>
-                        </div>
-                      </div>
+          <div class="flex justify-center p-4">
+            <div class="w-full overflow-hidden">
+              <div class="flex gap-8">
+                <div class="w-1/4">
+                  <div
+                    class="bg-white rounded-2xl mb-4 p-4 cursor-pointer"
+                    onclick="showContent(1)"
+                  >
+                    <div class="flex justify-between items-center">
+                      <span class="font-bold">Lidské zdroje (HR)</span>
+                      <span id="icon-1" class="text-lg">-</span>
                     </div>
-                    <div class="w-2/3 p-4">
-                      <div id="content-1">
-                        <h2 class="text-xl font-bold mb-4">
-                          Sjekk om du har en aktiv BankID med passord
-                        </h2>
-                        <p>
-                          Hvis det er lenge siden du har brukt kodebrikken, kan
-                          det hende at din ordinære BankID med passord har
-                          utløpt. Dette kan du sjekke ved å prøve å logge inn
-                          med kodebrikke eller kontakte banken din. Uten en
-                          aktiv BankID med kodebrikke og BankID-passord, vil du
-                          heller ikke få aktivert appen, og må bestille et nytt
-                          BankID-sertifikat i din bank. Beregn god tid, da det
-                          kan være noe leveringstid på dette.
-                        </p>
-                        <button
-                          class="mt-4 bg-blue-500 text-white px-4 py-2 rounded"
-                        >
-                          Testinnlogging
-                        </button>
-                      </div>
-                      <div id="content-2" class="hidden">
-                        <h2 class="text-xl font-bold mb-4">
-                          Husker du BankID-passordet ditt?
-                        </h2>
-                        <p>Content for the second item goes here...</p>
-                      </div>
+                  </div>
+                  <div class="p-4 cursor-pointer" onclick="showContent(2)">
+                    <div class="flex justify-between items-center">
+                      <span>IT</span>
+                      <span id="icon-2" class="text-lg">+</span>
                     </div>
                   </div>
                 </div>
+                <div class="w-2/3 p-4 md:p-8 bg-white rounded-2xl">
+                  <div id="content-1" class="">
+                    <h2 class="text-xl tracking-tight font-bold mb-4">
+                      Ministerský rada pro XY
+                    </h2>
+                    <p class="text-lg font-normal text-gray-800">
+                      Popis pozice
+                    </p>
+                    <a
+                      href="#"
+                      class="ml-4 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-800 rounded-full bg-[#B5D9F3] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                    >
+                      Podat přihlášku
+                      <svg
+                        class="w-5 h-5 ms-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M15 15L17 15C17.961 15 18.3688 16.2234 17.6 16.8L12.6 20.55C12.2444 20.8167 11.7556 20.8167 11.4 20.55L6.4 16.8C5.63119 16.2234 6.03899 15 7 15L11 15C11.5523 15 12 14.5523 12 14L12 3"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                  <div id="content-2" class="hidden">
+                    <h2 class="text-xl tracking-tight font-bold mb-4">
+                      Ministerský rada pro XY
+                    </h2>
+                    <p class="text-lg font-normal text-gray-800">
+                      Content for the second item goes here...
+                    </p>
+                  </div>
+                </div>
               </div>
+            </div>
+          </div>
 
-              <script>
-                function showContent(id) {
-                  // Hide all contents
-                  document.getElementById("content-1").classList.add("hidden");
-                  document.getElementById("content-2").classList.add("hidden");
+          <script>
+            function showContent(id) {
+              // Hide all contents
+              document.getElementById("content-1").classList.add("hidden");
+              document.getElementById("content-2").classList.add("hidden");
 
-                  // Reset all icons
-                  document.getElementById("icon-1").textContent = "+";
-                  document.getElementById("icon-2").textContent = "+";
+              // Reset all icons
+              document.getElementById("icon-1").textContent = "+";
+              document.getElementById("icon-2").textContent = "+";
 
-                  // Show the selected content
-                  document
-                    .getElementById("content-" + id)
-                    .classList.remove("hidden");
-                  document.getElementById("icon-" + id).textContent = "-";
-                }
+              // Show the selected content
+              document
+                .getElementById("content-" + id)
+                .classList.remove("hidden");
+              document.getElementById("icon-" + id).textContent = "-";
+            }
 
-                // Initial state
-                showContent(1);
-              </script>
-            </body>
-          </html>
+            // Initial state
+            showContent(1);
+          </script>
         </div>
         <div class="py-8 px-4 mx-auto max-w-6xl lg:py-16">
           <div
-            class="h-64 rounded-full sm:h-96 overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat"
+            class="h-64 rounded-2xl sm:h-96 overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat"
             style="background-image: url('./msp_cover.jpg')"
           ></div>
         </div>
