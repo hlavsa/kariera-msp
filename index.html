@@ -9406,7 +9406,7 @@
             </a>
           </div>
         </div>
-        <hr class="gov-header__separator" />
+        <hr class="gov-header__separator w-full" />
         <div class="gov-header__overlay"></div>
         <nav class="gov-header__nav">
           <div class="gov-header__nav-logo">
@@ -9637,11 +9637,93 @@
         </div>
 
         <div class="py-8 px-4 mx-auto max-w-6xl lg:py-16">
-          <h2
+          <h2 id="volne-pozice"
             class="mb-4 text-2xl font-['Inknut_Antiqua'] leading-none text-[#15355E] md:text-3xl tracking-tight"
           >
             Jsem připraven změnit Justici
           </h2>
+          <h3
+            class="mb-4 text-xl font-['Inknut_Antiqua'] leading-none text-[#15355E] md:text-2xl tracking-tight"
+          >
+            Hledáme do služebního poměru
+          </h3>
+          <div class="flex py-8 justify-center">
+            <div class="w-full overflow-hidden">
+              <div class="flex gap-8 md:gap-16">
+                <div class="w-1/4">
+                  <div
+                    class="bg-white rounded-2xl mb-4 p-4 cursor-pointer"
+                    onclick="showContent(1)"
+                  >
+                    <div class="flex justify-between items-center">
+                      <span class="font-bold">Lidské zdroje (HR)</span>
+                      <span id="icon-1" class="text-lg">-</span>
+                    </div>
+                  </div>
+                  <div class="p-4 cursor-pointer" onclick="showContent(2)">
+                    <div class="flex justify-between items-center">
+                      <span>IT</span>
+                      <span id="icon-2" class="text-lg">+</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full p-4 md:p-8 bg-white rounded-2xl">
+                  <div id="content-1" class="">
+                    <h2 class="text-xl tracking-tight font-bold mb-4">
+                      Ministerský rada pro XY
+                    </h2>
+                    <p class="text-lg font-normal text-gray-800 my-4">
+                      Popis pozice
+                    </p>
+                    <a
+                      href="#"
+                      class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-800 rounded-full bg-[#B5D9F3] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                    >
+                      Podat přihlášku
+                      <svg
+                        class="w-5 h-5 ms-4"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                          id="SVGRepo_tracerCarrier"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                          <path
+                            d="M15 15L17 15C17.961 15 18.3688 16.2234 17.6 16.8L12.6 20.55C12.2444 20.8167 11.7556 20.8167 11.4 20.55L6.4 16.8C5.63119 16.2234 6.03899 15 7 15L11 15C11.5523 15 12 14.5523 12 14L12 3"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                      </svg>
+                    </a>
+                    <p class="text-m font-normal text-gray-800 my-4">
+                      Přihlašovat se můžete do 5. června 2024
+                    </p>
+                  </div>
+                  <div id="content-2" class="hidden">
+                    <h2 class="text-xl tracking-tight font-bold mb-4">
+                      Ministerský rada pro XY
+                    </h2>
+                    <p class="text-lg font-normal text-gray-800 my-4">
+                      Content for the second item goes here...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3
+            class="mb-4 text-xl font-['Inknut_Antiqua'] leading-none text-[#15355E] md:text-2xl tracking-tight"
+          >
+            Hledáme do pracovního poměru
+          </h3>
           <div class="flex py-8 justify-center">
             <div class="w-full overflow-hidden">
               <div class="flex gap-8 md:gap-16">
@@ -9735,13 +9817,13 @@
 
         <div class="py-8 px-4 mx-auto max-w-6xl lg:py-16">
           <div
-            class="h-64 border-8 border-white rounded-3xl sm:h-96 overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat"
+            class="h-64 border-8 border-white rounded-3xl sm:h-96 overflow-hidden bg-cover bg-fixed bg-center bg-no-repeat"
             style="background-image: url('./msp_cover.jpg')"
           ></div>
         </div>
 
         <div class="py-8 px-4 mx-auto max-w-6xl lg:py-16">
-          <h2
+          <h2 id="benefity"
             class="mb-4 text-2xl font-['Inknut_Antiqua'] leading-none text-[#15355E] md:text-3xl tracking-tight"
           >
             Benefity v Justici
@@ -9755,13 +9837,25 @@
                     onclick="showContent(1)"
                   >
                     <div class="flex justify-between items-center">
-                      <span class="font-bold">Lidské zdroje (HR)</span>
+                      <span class="font-bold">Dobré zázemí</span>
                       <span id="icon-1" class="text-lg">-</span>
                     </div>
                   </div>
                   <div class="p-4 cursor-pointer" onclick="showContent(2)">
                     <div class="flex justify-between items-center">
-                      <span>IT</span>
+                      <span>Skvělý tým</span>
+                      <span id="icon-2" class="text-lg">+</span>
+                    </div>
+                  </div>
+                  <div class="p-4 cursor-pointer" onclick="showContent(2)">
+                    <div class="flex justify-between items-center">
+                      <span>Stravování</span>
+                      <span id="icon-2" class="text-lg">+</span>
+                    </div>
+                  </div>
+                  <div class="p-4 cursor-pointer" onclick="showContent(2)">
+                    <div class="flex justify-between items-center">
+                      <span>Dětská skupina</span>
                       <span id="icon-2" class="text-lg">+</span>
                     </div>
                   </div>
@@ -9769,38 +9863,11 @@
                 <div class="w-full p-4 md:p-8 bg-white rounded-2xl">
                   <div id="content-1" class="">
                     <h2 class="text-xl tracking-tight font-bold mb-4">
-                      Ministerský rada pro XY
+                      Dobré zázemí
                     </h2>
                     <p class="text-lg font-normal text-gray-800 my-4">
                       Popis pozice
                     </p>
-                    <a
-                      href="#"
-                      class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-800 rounded-full bg-[#B5D9F3] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100"
-                    >
-                      Podat přihlášku
-                      <svg
-                        class="w-5 h-5 ms-4"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g
-                          id="SVGRepo_tracerCarrier"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        ></g>
-                        <g id="SVGRepo_iconCarrier">
-                          <path
-                            d="M15 15L17 15C17.961 15 18.3688 16.2234 17.6 16.8L12.6 20.55C12.2444 20.8167 11.7556 20.8167 11.4 20.55L6.4 16.8C5.63119 16.2234 6.03899 15 7 15L11 15C11.5523 15 12 14.5523 12 14L12 3"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          ></path>
-                        </g>
-                      </svg>
-                    </a>
                   </div>
                   <div id="content-2" class="hidden">
                     <h2 class="text-xl tracking-tight font-bold mb-4">
@@ -9851,8 +9918,8 @@
             </p>
             <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0">
               <a
-                href="#"
-                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-[#ECF7FF] rounded-full bg-[#15355E] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300"
+                href="#volne-pozice"
+                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-[#ECF7FF] border-8 border-white rounded-full bg-[#15355E] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300"
               >
                 Teď hledáme
                 <svg
@@ -9878,8 +9945,8 @@
                 </svg>
               </a>
               <a
-                href="#"
-                class="ml-4 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-800 rounded-full bg-[#B5D9F3] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100"
+                href="#benefity"
+                class="ml-4 inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-800 border-8 border-white rounded-full bg-[#B5D9F3] hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100"
               >
                 Proč k nám
                 <svg
